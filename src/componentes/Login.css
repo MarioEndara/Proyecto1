@@ -1,0 +1,125 @@
+/* Contenedor principal con el formulario más arriba */
+.loginPage {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    transform: translateY(-120px); /* Ajustado para subir sin desbordar */
+}
+
+/* Tarjeta del formulario con sombra */
+.loginPage form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+}
+
+/* Título */
+.loginPage-title {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Campos de entrada (correo y contraseña) */
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+/* Efecto al hacer foco en los inputs */
+input:focus {
+    outline: none;
+    border-color: #ff8a65;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Botón de inicio de sesión */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #ff8a65;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+/* Efecto hover en botón de login */
+button:hover {
+    background-color: #ff8a65
+}
+
+/* Enlace de registro */
+.forgot-password {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.forgot-password a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+/* Botón "Regresar a Home" */
+.regresar-btn {
+    width: 160px; /* Más pequeño */
+    padding: 10px;
+    background-color: #6c757d; /* Gris neutro */
+    color: white;
+    border: none;
+    border-radius: 20px; /* Bordes más redondeados */
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 15px;
+}
+
+/* Efecto hover en "Regresar a Home" */
+.regresar-btn:hover {
+    background-color: #5a6268;
+}
+
+/* Diseño responsivo */
+@media (max-width: 480px) {
+    .loginPage form {
+        width: 90%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

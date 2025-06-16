@@ -1,0 +1,51 @@
+/* Encabezado.css */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f9fa;
+    border-bottom: 40px solid #ddd;
+    font-size: 18px;
+    padding: 1rem 0; /* Solo padding vertical */
+}
+
+.logo {
+    display: flex;
+    align-items: center;  /* Alinea verticalmente la imagen y el texto */
+}
+
+.logo img {
+    width: 40px; /* Ajusta el tamaño de la imagen si es necesario */
+    margin-right: 10px;  /* Espacio entre la imagen y el texto */
+}
+
+.logo-text {
+    font-size: 24px;  /* Ajusta el tamaño del texto */
+    font-weight: bold; /* Cambia el grosor si es necesario */
+}
+
+/* Estilos para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.logo img {
+    width: 65px;
+    height: 60px;
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration:none;
+    color: #ff8a65;
+    font-weight: bold;  
+    margin-right: 30px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
